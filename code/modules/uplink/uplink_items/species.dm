@@ -13,3 +13,4 @@
 	cost = 2
 	item = /obj/item/flashlight/lantern/syndicate
 	restricted_species = list(SPECIES_MOTH)
+	surplus = 0

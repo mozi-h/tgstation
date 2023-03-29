@@ -1,5 +1,6 @@
 /obj/structure/frame/computer
 	name = "computer frame"
+	desc = "A frame for constructing your own computer. Or console. Whichever name you prefer."
 	icon_state = "0"
 	state = 0
 
@@ -164,6 +165,8 @@
 	if(user.combat_mode)
 		return ..()
 
+/obj/structure/frame/computer/AltClick(mob/user)
+	return ..() // This hotkey is BLACKLISTED since it's used by /datum/component/simple_rotation
 
 /obj/structure/frame/computer/deconstruct(disassembled = TRUE)
 	if(!(flags_1 & NODECONSTRUCT_1))
